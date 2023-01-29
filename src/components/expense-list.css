@@ -1,0 +1,22 @@
+.expense-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+    background-color: rgba(38, 208, 214, 0.678);
+}
+
+@media (max-width: 700px){
+    .expense-list{
+        min-width: 600px;
+        margin: 10px;
+    }
+}
+@media (max-height: 700px){
+    .expense-list{
+        height: 50%;
+        margin: 10px;
+    }
+}

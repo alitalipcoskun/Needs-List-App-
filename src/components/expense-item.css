@@ -1,0 +1,111 @@
+
+.expense-item__{
+    margin-top: 15px;
+    min-width: 300px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(77, 36, 85, 0.774);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+}
+
+
+
+.expense-item__properties{
+    min-width: 350px;
+    display: inline;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+    justify-content: space-between;
+    color: white;
+}
+.expense-item__date{
+    display: inline;
+    margin-left: 10vh;
+    font-size: 3vh;
+    color: white;
+    font-weight: 500;
+    background-color: rgba(38, 208, 214, 0.678);
+    padding: 1vh;
+    border-style: solid;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(245, 245, 245, 0.685);
+    display: flex;
+    flex-direction: row;
+    margin-right: 5vh;
+}
+
+.expense-item__properties{
+    display: inline-flex;
+    font-size: 4vh;
+}
+.expense-item__name{
+    display: inline;
+    background-color: rgba(38, 208, 214, 0.678);
+    padding: 1vh;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(245, 245, 245, 0.685);
+}
+.expense-item__amount{
+    display: inline;
+    margin-right: 10vh;
+    font-size: 3vh;
+    background-color: rgba(38, 208, 214, 0.678);
+    padding: 1vh;
+    border-radius: 10px;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(245, 245, 245, 0.685);
+}
+@media (max-height: 700px) {
+    *{
+        margin: 0;
+    }
+    .expense-item__{
+        height: 50px;
+        margin-top: 20px;
+        display: inline-flex;
+        margin: 0;
+        transition: 0.5s;
+    }
+    .expense-item__date{
+
+        font-size: 25px;
+    }
+    .expense-item__name{
+        font-size: 30px;
+    }
+    .expense-item__amount{
+        font-size: 25px;
+    }
+    
+}
+@media (max-width: 700px) {
+    *{
+        margin: 0;
+    }
+    .expense-item__{
+        min-width: 600px;
+        height: 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: inline-flex;
+        margin: 0;
+        transition: 0.5s;
+    }
+    
+}
