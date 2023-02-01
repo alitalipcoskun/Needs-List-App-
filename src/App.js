@@ -6,9 +6,13 @@ import NewExpense from './components/NewExpenses/NewExpense';
 
 
 function App() {
+  const addExpenseHandler = (expense) => {
+    console.log('In App.js');
+    console.log(expense)
+  }
   return (
     <div>
-      <NewExpense></NewExpense>
+      <NewExpense onAddingExpense = {addExpenseHandler}></NewExpense>
       <Expenses></Expenses>
     </div>
     

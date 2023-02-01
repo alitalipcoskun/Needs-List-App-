@@ -3,9 +3,18 @@ import ExpenseForm from "./ExpenseForm";
 import './new-expense.css';
 import NewExpenseCard from "../UI/NewExpenseCard";
 
-function NewExpense(){
+function NewExpense(props){
+
+    const saveExpenseDataHandler = (enteredExpenseData) => {
+        const expenseData = {
+            ...enteredExpenseData,
+            id: Math.random().toString()
+        };
+        props.onAddingExpense(expenseData);
+    }
+
     return(<NewExpenseCard className="new-expense">
-        <ExpenseForm/>
+        <ExpenseForm onSaveExpenseData = {saveExpenseDataHandler} />
     </NewExpenseCard>)
 }
 
