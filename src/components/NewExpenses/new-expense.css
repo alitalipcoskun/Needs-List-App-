@@ -1,0 +1,44 @@
+
+.new-expense{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    min-width: 600px;
+}
+.new-expense__form{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.new-expense__control{
+    margin: 4vh;
+}
+.new-expense__control label{
+    display: block;
+    font-size: 24px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.new-expense__control input{
+    width: 150px;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    height: 25px;
+}
+.new-expense__actions button{
+    cursor: pointer;
+    margin-top: 20px;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    padding: 1vh;
+    color: white;
+    border-radius: 6px;
+    font-size: 24px;
+    background-color: rgba(77, 36, 85, 0.774);
+}
+

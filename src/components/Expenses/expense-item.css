@@ -107,5 +107,14 @@
         margin: 0;
         transition: 0.5s;
     }
-    
+    .expense-item__date{
+
+        font-size: 25px;
+    }
+    .expense-item__name{
+        font-size: 30px;
+    }
+    .expense-item__amount{
+        font-size: 25px;
+    }
 }
