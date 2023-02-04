@@ -8,6 +8,8 @@
     min-width: 600px;
 }
 .new-expense__form{
+    margin-left: 10px;
+    margin-right: 10px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
