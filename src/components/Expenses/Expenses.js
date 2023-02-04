@@ -12,13 +12,12 @@ function Expenses(props){
         console.log(selectedYear);
         setSelectedYear(selectedYear);
     }
-    const date = new Date("2023-03-03");
     return(<Card className="expense-list">
         <ExpenseFilter onFilterChange={filterChangeHandler} selected = {userYear}></ExpenseFilter>
-        <ExpenseItem date= {date} title= "Macbook" amount = "99.99"/>
-        <ExpenseItem date= {date} title= "Macbook" amount = "99.99"/>
-        <ExpenseItem date= {date} title= "Macbook" amount = "99.99"/>
-        <ExpenseItem date= {date} title= "Macbook" amount = "99.99"/>
+        <ExpenseItem date= {props.items[0].date} title= {props.items[0].title} amount = {props.items[0].amount}/>
+        <ExpenseItem date= {props.items[1].date} title= {props.items[1].title} amount = {props.items[1].amount}/>
+        <ExpenseItem date= {props.items[2].date} title= {props.items[2].title} amount = {props.items[2].amount}/>
+        <ExpenseItem date= {props.items[3].date} title= {props.items[3].title} amount = {props.items[3].amount}/>
     </Card>);
 }
 
