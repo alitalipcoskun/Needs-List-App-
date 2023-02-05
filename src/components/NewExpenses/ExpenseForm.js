@@ -6,7 +6,7 @@ function ExpenseForm(props){
 
     const [userInput, setUserInput] = useState({
         title: '',
-        cost: '',
+        amount: '',
         date: '',
     })
 
@@ -34,26 +34,26 @@ function ExpenseForm(props){
             enteredCost: event.target.value,
         });*/
         setUserInput((prevState) => {
-            return {...prevState, cost: event.target.value}
+            return {...prevState, amount: event.target.value}
         });
     }
 
     const submitHandler = (event) =>{
-        const {cost, date, title} = userInput;
+        const {amount, date, title} = userInput;
         event.preventDefault();
         const expense = {
             title: title,
-            cost: cost,
+            amount: amount,
             date: new Date(date),
         }
         props.onSaveExpenseData(expense);
         setUserInput({
-            cost: '',
+            amount: '',
             title: '',
             date: '',
         })
     }
-    const {cost, date, title} = userInput;
+    const {amount, date, title} = userInput;
     return (
         <form className = "new-expense__form" onSubmit={submitHandler}>
             <div className = 'new-expense__controls'>
@@ -65,7 +65,7 @@ function ExpenseForm(props){
             <div className = 'new-expense__controls'>
                 <div className="new-expense__control">
                     <label>Cost</label>
-                    <input type='number' value= {cost} min="0.01" step= "0.01" onChange={costChangeHandler}></input>
+                    <input type='number' value= {amount} min="0.01" step= "0.01" onChange={costChangeHandler}></input>
                 </div>
             </div>
             <div className = 'new-expense__controls'>
