@@ -12,11 +12,19 @@ function Expenses(props) {
         console.log(selectedYear);
         setSelectedYear(selectedYear);
     }
+    const filteredExpense = props.items.filter(expense => {
+        return expense.date.getFullYear().toString() === userYear; 
+    });
+
     return (<Card className="expense-list">
         <ExpenseFilter onFilterChange={filterChangeHandler} selected={userYear}></ExpenseFilter>
-        {props.items.map((expense) =>{
-        return <ExpenseItem date={expense.date} title={expense.title} amount={expense.amount}></ExpenseItem>}
+        
+        
+        {filteredExpense.length === 0 ? <p className="error-message">No item on the list.</p> : filteredExpense.map((expense) => {
+            return <ExpenseItem key={expense.id} date={expense.date} title={expense.title} amount={expense.amount}></ExpenseItem>
+        }
         )}
+        
     </Card>);
 }
 
