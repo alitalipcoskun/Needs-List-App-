@@ -1,4 +1,6 @@
 .expense-list{
+    list-style: none;
+    padding: 0;
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
@@ -9,6 +11,13 @@
     border-width: 0.5px;
     background-color: rgba(38, 208, 214, 0.678);
 }
+
+
+.expense-list__fallback {
+    color: white;
+    text-align: center;
+}
+
 
 @media (max-width: 700px){
     .expense-list{
