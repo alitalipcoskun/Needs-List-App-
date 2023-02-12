@@ -74,8 +74,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 This is the main three component of the project. First is for adding new element to list -i cannot add right now but see it on the screen-, second is filtering due to date, third is showing elements.
 
 ![Screenshot_430](https://user-images.githubusercontent.com/51987890/218323467-ae4fa577-6130-43c1-ac6f-9999c56a27f6.png)
-Now my filter is working, and see results. If filter is empty ![Uploading Screenshot_430.png…]()
-then I display error message to user. ı created another component which is ExpenseList. Expense list returns the values or give feedback to user about list.
+Now my filter is working, and see results. If filter is empty then I display error message to user. I created another component which is ExpenseList. Expense list returns the values or give feedback to user about list.
 
 ![Screenshot_431](https://user-images.githubusercontent.com/51987890/218329975-e7d6e5c9-b46f-4a90-92d7-808c2c14c54e.png)
 If you click the "Add New Expense" button, you will see the form about adding the expense.  It is connected to previous screenshot.
