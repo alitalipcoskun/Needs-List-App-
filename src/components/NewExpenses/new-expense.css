@@ -31,7 +31,12 @@
     border-radius: 4px;
     height: 25px;
 }
+.new-expense__actions{
+    display: flex;
+    flex-direction: row;
+}
 .new-expense__actions button{
+    margin-right: 20px;
     cursor: pointer;
     margin-top: 20px;
     border: solid;
@@ -42,5 +47,6 @@
     border-radius: 6px;
     font-size: 24px;
     background-color: rgba(77, 36, 85, 0.774);
+    margin-bottom: 10px;
 }
 

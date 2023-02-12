@@ -19,10 +19,17 @@ function NewExpense(props){
             id: Math.random().toString()
         };
         props.onAddingExpense(expenseData);
+        setAddingExpense(false);
+    }
+    function cancelExpenseHandler(){
+        setAddingExpense(false);
     }
     if(addingExpense){
         newExpense = (
-            <ExpenseForm onSaveExpenseData = {saveExpenseDataHandler} />
+            <ExpenseForm 
+            onSaveExpenseData = {saveExpenseDataHandler} 
+            onCancel = {cancelExpenseHandler}
+            />
         )
     }
 
