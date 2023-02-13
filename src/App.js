@@ -1,4 +1,4 @@
-import userEvent from '@testing-library/user-event';
+
 import React, {useState} from 'react';
 import './App.css';
 import Expenses from './components/Expenses/Expenses';
